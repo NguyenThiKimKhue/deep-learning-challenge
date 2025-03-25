@@ -36,13 +36,16 @@ This analysis was developed for Alphabet Soup, a nonprofit foundation seeking to
         o	Additional columns, including EIN and NAME, were dropped.
         o	Binning ranges for the CLASSIFICATION and APPLICATION_TYPE columns were adjusted to group more values (e.g., changing from <1000 to <1500).
         o	The number of hidden layers was increased from 2 to 3, and the number of neurons in each layer was modified (e.g., from 100, 40 to 120, 80, 30 and to 300, 100, 10).
-        o	The number of epochs was reduced from 100 to 50 to save time due to small size.
+        o	The number of epochs was reduced from 100 to 50 to save time due to the small sized data.
 
 **File Breakdown:**
-        • Colab file: Charity_byKimNguyen
-        • The trained model:  AlphabetSoupCharity.h5
-        • Optimized model 1: AlphabetSoupCharity_Optimization2.h5
-        • Optimized model 2: AlphabetSoupCharity_Optimization3.h5
+        • **Colab file**: Charity_byKimNguyen
+
+        • **The trained model**:  AlphabetSoupCharity.h5
+
+        • **Optimized model 1**: AlphabetSoupCharity_Optimization2.h5
+
+        • **Optimized model 2:** AlphabetSoupCharity_Optimization3.h5
 
 
 # **Overall Results:**
