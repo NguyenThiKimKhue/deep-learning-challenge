@@ -1,18 +1,18 @@
-# deep-learning-challenge
+# # deep-learning-challenge
 Module 21
 
-**Overview**:
+# **Overview**:
 
 This analysis was developed for Alphabet Soup, a nonprofit foundation seeking to fund organizations with the best chance of success. Using machine learning and neural networks, the goal was to build a binary classifier that predicts whether an organization will be successful if funded. The analysis involved three main phases: data preprocessing, neural network model development (compiling, training, and evaluating), and model optimization.
 
 
-# Key Columns:
+    ** Key Columns:**
 
-•	Target Variable: IS_SUCCESSFUL (indicates the success of an application)
-•	Feature Variables: Includes variables such as STATUS, ASK_AMT, various APPLICATION_TYPE_* columns, along with others like ORGANIZATION_Trust and SPECIAL_CONSIDERATIONS_Y.
-•	Exclusions: The EIN and NAME columns were excluded during preprocessing as they were deemed irrelevant for modeling.
+    •	Target Variable: IS_SUCCESSFUL (indicates the success of an application)
+    •	Feature Variables: Includes variables such as STATUS, ASK_AMT, various APPLICATION_TYPE_* columns, along with others like ORGANIZATION_Trust and SPECIAL_CONSIDERATIONS_Y.
+    •	Exclusions: The EIN and NAME columns were excluded during preprocessing as they were deemed irrelevant for modeling.
 
-# Data Preprocessing:
+**Data Preprocessing:**
 
     In this phase, the data was prepared for modeling using Python libraries such as Pandas and scikit-learn. Key preprocessing steps included:
     •	Identification of Variables
@@ -30,7 +30,7 @@ This analysis was developed for Alphabet Soup, a nonprofit foundation seeking to
     o	The dataset was split into feature array X and target array y using train_test_split.
     o	Data was scaled using scikit-learn’s StandardScaler() by fitting on the training set and then applying the same transformation to the test set.
 
-# Model Training and Evaluation:
+**Model Training and Evaluation:**
 
     •	Various attempts were made to enhance the model's performance:
     o	Additional columns, including EIN and NAME, were dropped.
@@ -38,9 +38,7 @@ This analysis was developed for Alphabet Soup, a nonprofit foundation seeking to
     o	The number of hidden layers was increased from 2 to 3, and the number of neurons in each layer was modified (e.g., from 100, 40 to 120, 80, 30 and to 300, 100, 10).
     o	The number of epochs was reduced from 100 to 50 to save time due to small size.
 
-
-# File Breakdown:
-
+**File Breakdown:**
     •	Colab file: Charity_byKimNguyen
     •	The trained model:  AlphabetSoupCharity.h5
     •	Optimized model 1: AlphabetSoupCharity_Optimization2.h5
